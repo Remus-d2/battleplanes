@@ -1,0 +1,24 @@
+#gameboard {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(5, 60px);
+  grid-gap: 0.003px;
+  line-height: 0;
+  width: 300px;
+  height: 300px;
+  background-color: #212424;
+}
+
+#gameboard .tile {
+  width: 60px;
+  height: 60px;
+  color: white;
+}
+
+#gameboard .tile.destroyed {
+  background-color: red !important;
+}
+
+#gameboard .tile.shot {
+  background-color: antiquewhite;
+}
